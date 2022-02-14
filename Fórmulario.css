@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,rgb(148, 0, 0),rgb(1, 40, 58));
+}
+.box{
+    position: static;
+    top: 10%;
+    left: 100%;
+    align-items: center;
+    transform: translate(-0%,-0%);
+    background-color: rgba(rgb(43, 0, 0)(51, 1, 1), 0, 0, 0);
+    padding: 15px;
+    border-radius: 15px;
+    color:white
+}
+
+fieldset{
+    border: 5px solid red;
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    
+}
+
+
+.inputbox{
+    position: relative
+}
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+.inputclient{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser:focus ~.inputclient
+{
+    top: -20px;
+    font-size: 10px;
+    color: red;
+}
+
+.inputuser:valid ~.inputclient{
+    top: -20px;
+    font-size: 10px;
+    color: dodgerblue;
+}
+
+#date{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(43,0,0));
+    position: relative;
+    width: 25%;
+    left: 35%;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.submit:hover{
+    background-image: linear-gradient(to right, rgb(0,80,172),rgb(80,19,195))
+}
